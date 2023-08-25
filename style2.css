@@ -28,6 +28,7 @@ div ul #div h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 900;   
     cursor: pointer;
+    z-index: -1;
 }
 #menu_div{
     text-align: right;
@@ -69,23 +70,80 @@ div ul i:hover{
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;  
-    transform: translateY(-25vw);
-    margin-left: 50px;
+    transform: translateY(-57vh);
+    margin-left: 54px;
+    z-index: 1;
+    margin-top: 100px;
 }
 #para{
     color: white;
+    margin-top: 50px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    margin-left: 50px;  
-    transform: translateY(-25vw);
+    margin-left: 54px;  
+    transform: translateY(-60vh);
     margin-right: 200px;
+    font-size: 15px;
+    z-index: 1;
+}
+.menu{
+    display: none;
 }
 @media only screen and (max-width: 836px) {
     #menu{
-        margin: 22px 30px;
+        margin: 22px 40px;
         display: block;
     }
-    i{
+    #home{
         display: none;
+    }
+    #search{
+        display: none;
+    }
+    #fscreen{
+        display: none;
+    }
+    #settings{
+        display: none;
+    }
+    #html{
+        display: none;
+    }
+    #about{
+        transform: translateY(0px);
+        margin-top: 10px;
+    }
+    #para{
+        transform: translateY(0px);
+        margin-right: 30px;
+    }
+    .menu{
+        position: absolute;
+        display: block;
+        margin-left: auto;
+        background-color: black;
+        height: 100vh;
+        width: 60vw;
+        display: none;
+        z-index: -1;
+        color: white;
+        transform: translateY(-80px);
+        text-align: left;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    }
+    .menu .home_android {
+        color: white;
+        font-size: 25px;
+        margin-top: 100px ;
+        padding: 0 20px;
+        background-color: rgb(51, 51, 51);
+    }
+    .menu h1{
+        color: white;
+        font-size: 25px;
+        margin: 20px 0;
+        padding: 0 20px;
+        background-color: rgb(51, 51, 51);
     }
 }

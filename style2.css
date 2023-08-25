@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+@keyframes fadein {
+    0% { opacity: 0; 
+        scale: 0;}
+    100% { opacity: 1; 
+        scale: 1;}
+  }
+  
+body{
+    background-color: rgb(29, 33, 56);
+}
+body::backdrop{
+    background-color: rgb(29, 33, 56);
+}
+div{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    z-index: 666;
+    flex: 1 ;
+}
+.header{
+    display: flex;
+}
+div ul #div h1{
+    padding: 10px 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;   
+    cursor: pointer;
+}
+#menu_div{
+    text-align: right;
+}
+#menu{
+    margin: 22px 30px;
+    display: none;
+}
+div ul .header #menu_div #menu:hover{
+    scale: 1.2  ;
+}
+#menu.active{
+    animation: fadein 0.3s;
+}
+div ul #div{
+    text-align: left;
+    display: flex;
+}
+div ul{
+    text-align: right;
+}
+div ul i{
+    display: inline-block;
+    color: white;
+    margin: 20px 30px;
+    cursor: pointer;
+    scale: 1.2;
+    transition: ease 0.3s;
+}
+div ul i:hover{
+    scale: 1.6;
+}
+.container{
+    background-color: white;
+    width: 50vw;
+    min-height: 50vh;
+}
+#about{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;  
+    transform: translateY(-25vw);
+    margin-left: 50px;
+}
+#para{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-left: 50px;  
+    transform: translateY(-25vw);
+    margin-right: 200px;
+}
+@media only screen and (max-width: 836px) {
+    #menu{
+        margin: 22px 30px;
+        display: block;
+    }
+    i{
+        display: none;
+    }
+}

@@ -92,7 +92,7 @@ div ul i:hover{
 }
 @media only screen and (max-width: 836px) {
     #menu{
-        margin: 22px 40px;
+        margin: 45px 50px;
         display: block;
     }
     #home{
@@ -128,7 +128,7 @@ div ul i:hover{
         display: none;
         z-index: -1;
         color: white;
-        transform: translateY(-80px);
+        transform: translateY(-120px);
         text-align: left;
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
